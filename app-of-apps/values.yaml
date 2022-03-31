@@ -1,6 +1,6 @@
-spec:
-  destination:
-    server: https://kubernetes.default.svc
-  source:
-    repoURL: https://github.com/ninoyr17/argocd.git
-    targetRevision: HEAD
+clusters:
+- name: cluster2
+  destinationServer: https://kubernetes.default.svc
+
+- name: cluster1
+  destinationServer: https://10.13.21.197:6443
