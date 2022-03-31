@@ -1,3 +1,5 @@
+{{- range .Values.clusters }}
+{{- if .apps.sampleApp.enabled }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -22,3 +24,7 @@ spec:
         name: nginx
         resources: {}
 status: {}
+{{- end }}
+---
+
+{{- end }}
