@@ -18,7 +18,7 @@ spec:
         app: nginx-deploy-test
     spec:
       containers:
-      - image: nginx
+      - image: nginx:3300
         name: nginx
         resources: {}
 status: {}
