@@ -18,7 +18,7 @@ spec:
         app: nginx-deploy-test
     spec:
       containers:
-      - image: nginx:1.20.2
+      - image: nginx
         name: nginx
         resources: {}
 status: {}
